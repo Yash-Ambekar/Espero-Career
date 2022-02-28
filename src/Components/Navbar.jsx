@@ -4,10 +4,11 @@ import logo from "./Espero_logo.png"
 
 const Navbar = () => {
     return ( 
-    <div className="navbarContainer">
-        <div className="logoImg w-40">
+    <div className="flex justify-center navbarContainer">
+        <div className="logoImg w-48">
             <img src={logo} alt=""/>
         </div>
+        
     </div> 
     );
 }
