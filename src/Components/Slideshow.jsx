@@ -24,7 +24,7 @@ const Slideshow = () => {
         {fadeImages.map((fadeImage, index) => (
           <div className="each-fade" key={index}>
             <div className="flex justify-center image-container">
-              <img src={fadeImage.url} className="w-full" />
+              <img src={fadeImage.url} alt= "" className="w-full" />
             </div>
             
           </div>
