@@ -1,0 +1,11 @@
+div.CopyrightContainer {
+  background-color: #293844;
+  padding: 20px 0;
+  color: #949ba0;
+  font-weight: bold;
+  justify-content: center;
+
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+}
