@@ -1,0 +1,32 @@
+.Instagram:hover{
+    
+    color: rgb(182, 23, 142);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    
+}
+
+.whatsapp:hover{
+
+    color: rgb(37, 211, 102);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.Twitter:hover{
+    cursor: pointer;
+    color: rgb(29, 161, 242);
+    transition: all .3s ease-in-out;
+}
+
+.Facebook:hover{
+    cursor: pointer;
+   color: rgb(66, 103, 178);
+   transition: all .3s ease-in-out;
+}
+
+.Email:hover{
+    cursor: pointer;
+    color:red;
+    transition: all .3s ease-in-out;
+}
