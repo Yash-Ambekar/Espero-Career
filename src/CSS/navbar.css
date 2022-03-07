@@ -1,6 +1,6 @@
 .Instagram:hover{
     
-    color: rgb(182, 23, 142);
+    color: rgb(141, 20, 111);
     cursor: pointer;
     transition: all .3s ease-in-out;
     
@@ -8,7 +8,7 @@
 
 .whatsapp:hover{
 
-    color: rgb(37, 211, 102);
+    color: rgb(32, 189, 89);
     cursor: pointer;
     transition: all .3s ease-in-out;
 }
@@ -29,4 +29,22 @@
     cursor: pointer;
     color:red;
     transition: all .3s ease-in-out;
+}
+
+.phoneEmail{
+    box-shadow: 3px 2px 5px rgb(5, 92, 92);
+    
+}
+
+.Socials{
+    box-shadow: 3px 2px 5px rgb(5, 92, 92);
+}
+.navContainer{
+    background-color: transparent !important;
+}
+
+.dropdown-menu{
+    padding:0 !important;
+    
+
 }

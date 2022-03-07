@@ -18,13 +18,15 @@ const fadeImages = [
 const Slideshow = () => {
   return (
     <div className="slide-container">
-      <Fade>
+      <Fade indicators={true} cssClass="slideShowCustom">
         {fadeImages.map((fadeImage, index) => (
+          
           <div className="each-fade" key={index}>
             <div className="flex justify-center image-container">
-              <img src={fadeImage.url} alt= "" className="images w-full" />
+              <img src={fadeImage.url} alt= "" className="h-[150px] sm:h-[300px] md:h-[350px] w-full images" />
             </div>
           </div>
+          
         ))}
       </Fade>
     </div>

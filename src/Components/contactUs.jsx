@@ -11,8 +11,8 @@ const ContactUs = () => {
         <h3 className="mb-0 mt-10">INTERESTED IN MHS?</h3>
         <p>Provide your contact details and our team will call you soon!</p>
       </div>
-      <div className="form-container">
-        <Form>
+      <div className="w-[90%] md:w-[60%] form-container">
+        <Form className="flex flex-col md:inline">
           <Form.Control
             type="text"
             placeholder="Full Name"
@@ -25,28 +25,28 @@ const ContactUs = () => {
           <Form.Control
             type="email"
             placeholder="Email id"
-            className="input-container"
+            className="w-[98%] md:w-[48%] input-container"
           />
           <Form.Control
             type="number"
             placeholder="Contact No"
-            className="input-container"
+            className="w-[98%] md:w-[48%] input-container"
           />
           <Form.Control
             type="text"
             placeholder="Current School"
-            className="input-container"
+            className="w-[98%] md:w-[48%] input-container"
           />
           <Form.Control
             type="text"
             placeholder="Enter email"
-            className="input-container"
+            className="w-[98%] md:w-[48%] input-container"
           />
           <FormCheck.Label className="label-container">
             By clicking on submit button you are expressly agreeing to Matrix's
             Terms of Use and Privacy Policy
           </FormCheck.Label>
-          <Button type="submit" className="form-btn">
+          <Button type="submit" className="mx-auto form-btn">
             Request to Call Back
           </Button>
         </Form>
