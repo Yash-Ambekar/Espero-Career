@@ -48,3 +48,15 @@
     
 
 }
+.navbarContainer{
+    background-image: url(".././Components/Tiles_background\ -\ navbar.jpg");
+
+}
+/* .nav-link:hover{
+    
+    padding:0px;
+    margin-bottom: 0px;
+    border-bottom: solid;
+    border-bottom-color: rgb(47, 125, 173);
+    transition: all 0.2s ease-in;
+} */

@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Playfair+Display:ital,wght@0,500;1,400;1,500;1,600&display=swap");
+
+/* .grid-container {
+  display: inline-grid;
+  object-fit: cover;
+  justify-content: center;
+  padding: 3em;
+  grid-template-columns: repeat(auto-fit, minmax(450px,1fr));
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  box-shadow: 10px 10px 20px rgba(0,0, 0, 1);
+} */
+
+.grid-container {
+  gap: 3em;
+  max-width: 85rem;
+  margin: 50px 50px auto;
+  
+}
+
+.grid-container > * {
+  break-inside: avoid;
+}
+
+.grid-item:hover {
+  box-shadow: 15px 15px 25px rgb(100, 98, 98);
+}
+.grid-item {
+    
+  background-image: url(".././Components/Tiles_background.jpg");  
+  box-shadow: 5px 5px 10px rgb(100, 98, 98);
+  border-radius: 1%;
+  padding: 5%;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+.blogTitle {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+
+
+.blogDescription {
+  font-family: "Gideon Roman", cursive;
+  color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /* -webkit-line-clamp: 4; */
+  -webkit-box-orient: vertical;
+
+  margin-top: 10px;
+}

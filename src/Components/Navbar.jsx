@@ -10,6 +10,7 @@ const NavigationBar = () => {
   var phoneNumber= "+91-900564572";
   var emailId="pankajjangir@gmail.com";
   
+  
   // const showDropdown = (key)=>{
    
   //   console.log(key);
@@ -29,22 +30,22 @@ const NavigationBar = () => {
     {
       element: "About Espero",
       subelements:["Our Vision", "Our message from Managing Committee"],
-      //show: false,
+      
     },
     {
       element: "Admissions",
       subelements:["Apply for Admission", "Rules and Regulation"],
-      //show: false,
+      
     },
     {
       element: "Why Espero",
       subelements:["Best Faculty team", "Espero Online and Video Labs", "Trust of Espero System", "Outstanding Teaching Methodology"],
-      //show: false,
+      
     },
     {
       element: "Results",
       subelements:["12th Board Exam Results", "10th Board Exam Results"],
-      // show: false,
+      
     },
 
   ];
@@ -52,7 +53,7 @@ const NavigationBar = () => {
   
 
   return (
-    <div className="flex items-center justify-center bg-cyan-100 navbarContainer">
+    <div className="flex items-center bg-cyan-100 navbarContainer">
       <div className="hidden lg:flex lg:flex-col lg:justify-center ml-4 rounded-sm bg-cyan-500/50 phoneEmail">
         <div className="hidden md:flex md:items-center md:ml-1">
         <i className="text-5xl mr-2 fa fa-mobile"></i>
@@ -67,7 +68,7 @@ const NavigationBar = () => {
       <div className="logoImg flex center ml-4 w-36">
         <img src={logo} alt="Institute Logo"/>
       </div>
-  <Navbar bg="transparent" className=" md:flex">
+  <Navbar bg="transparent" className="text-lg md:flex">
   <Container fluid>
     <Navbar.Toggle aria-controls="navbarScroll" />
     <Navbar.Collapse id="navbarScroll">
@@ -76,10 +77,10 @@ const NavigationBar = () => {
         style={{ maxHeight: '100px' }}
         navbarScroll
       >
-        <Nav.Link href="/">Home</Nav.Link>
+        <Nav.Link href="/" className="font-bold">Home</Nav.Link>
       {navElement.map((variable, index)=>(
         
-        <NavDropdown  title={variable.element} id="navbarScrollingDropdown" key={index} >
+        <NavDropdown className="font-bold" title={variable.element} id="navbarScrollingDropdown" key={index} >
           {variable.subelements.map((dropdown,index)=>(
           <NavDropdown.Item  className="bg-blue-200" key={index}>{dropdown}</NavDropdown.Item>
           ))}
