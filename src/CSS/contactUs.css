@@ -8,11 +8,11 @@ div.container {
 
   width: 100%;
   max-width: 100%;
-  height: 600px;
+  
 }
 
 div.form-container {
-  width: 60%;
+  
   background: rgba(60, 60, 60, 0.3);
 
   margin: auto;
@@ -23,7 +23,7 @@ div.form-container {
 input.input-container {
   border-radius: 40px;
   display: inline-block;
-  width: 48%;
+ 
   height: 3em;
   margin: 1% 1%;
 }

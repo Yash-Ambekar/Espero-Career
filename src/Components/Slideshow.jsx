@@ -34,15 +34,20 @@ const Slideshow = () => {
   }, []);
 
   return (
-    <Fade>
-      {fadeImages.map((fadeImageURL) => (
-        <div className="each-fade">
-          <div className="flex justify-center image-container">
-            <img src={fadeImageURL} alt="Hello" className="images w-full" />
+    <div className="slide-container">
+      <Fade indicators={true} cssClass="slideShowCustom">
+        {fadeImages.map((fadeImage, index) => (
+          
+          <div className="each-fade" key={index}>
+            <div className="flex justify-center image-container">
+              <img src={fadeImage.url} alt= "" className="h-[150px] sm:h-[300px] md:h-[350px] w-full images" />
+            </div>
           </div>
-        </div>
-      ))}
-    </Fade>
+          
+        ))}
+      </Fade>
+    </div>
+    
   );
 };
 
