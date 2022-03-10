@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Playfair+Display:ital,wght@0,500;1,400;1,500;1,600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,500;1,400;1,500;1,600&family=Signika:wght@500&display=swap');
+
 .Instagram:hover{
     
     color: rgb(141, 20, 111);
@@ -49,7 +53,8 @@
 
 }
 .navbarContainer{
-    background-image: url(".././Components/Tiles_background\ -\ navbar.jpg");
+    /* background-image: url(".././Components/Tiles_background\ -\ navbar.jpg"); */
+    background-image: linear-gradient(to right, #9865d6, #199dbe);
 
 }
 /* .nav-link:hover{
@@ -60,3 +65,9 @@
     border-bottom-color: rgb(47, 125, 173);
     transition: all 0.2s ease-in;
 } */
+
+.nav-link{
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}

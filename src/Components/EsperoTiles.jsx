@@ -47,7 +47,9 @@ const Blogtiles = () => {
   return  (
     
     <div className="flex w-full justify-center">
+      
     <div className={`md:items-center md:justify-center xl:columns-3 lg:columns-3 md:columns-2 grid-container`}>
+      
       {docs.map((doc,index) => {
    
         return ( 

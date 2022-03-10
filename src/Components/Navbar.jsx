@@ -4,6 +4,7 @@ import "../CSS/navbar.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from 'react-bootstrap/Navbar'
 import { Container, Nav, NavDropdown } from "react-bootstrap";
+import { click } from "@testing-library/user-event/dist/click";
 
 
 const NavigationBar = () => {
@@ -49,6 +50,7 @@ const NavigationBar = () => {
     },
 
   ];
+  
 
   
 
@@ -77,10 +79,10 @@ const NavigationBar = () => {
         style={{ maxHeight: '100px' }}
         navbarScroll
       >
-        <Nav.Link href="/" className="font-bold">Home</Nav.Link>
+        <Nav.Link href="/" className="mr-5 font-bold nav-link">Home</Nav.Link>
       {navElement.map((variable, index)=>(
         
-        <NavDropdown className="font-bold" title={variable.element} id="navbarScrollingDropdown" key={index} >
+        <NavDropdown className="mr-5 font-bold" title={variable.element} id="navbarScrollingDropdown" key={index} >
           {variable.subelements.map((dropdown,index)=>(
           <NavDropdown.Item  className="bg-blue-200" key={index}>{dropdown}</NavDropdown.Item>
           ))}
