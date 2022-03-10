@@ -1,62 +1,56 @@
-.Instagram:hover{
-    
-    color: rgb(141, 20, 111);
-    cursor: pointer;
-    transition: all .3s ease-in-out;
-    
+.Instagram:hover {
+  color: rgb(141, 20, 111);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
-.whatsapp:hover{
-
-    color: rgb(32, 189, 89);
-    cursor: pointer;
-    transition: all .3s ease-in-out;
+.whatsapp:hover {
+  color: rgb(32, 189, 89);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
-.Twitter:hover{
-    cursor: pointer;
-    color: rgb(29, 161, 242);
-    transition: all .3s ease-in-out;
+.Twitter:hover {
+  cursor: pointer;
+  color: rgb(29, 161, 242);
+  transition: all 0.3s ease-in-out;
 }
 
-.Facebook:hover{
-    cursor: pointer;
-   color: rgb(66, 103, 178);
-   transition: all .3s ease-in-out;
+.Facebook:hover {
+  cursor: pointer;
+  color: rgb(66, 103, 178);
+  transition: all 0.3s ease-in-out;
 }
 
-.Email:hover{
-    cursor: pointer;
-    color:red;
-    transition: all .3s ease-in-out;
+.Email:hover {
+  cursor: pointer;
+  color: red;
+  transition: all 0.3s ease-in-out;
 }
 
-.phoneEmail{
-    box-shadow: 3px 2px 5px rgb(5, 92, 92);
-    
+.phoneEmail {
+  box-shadow: 3px 2px 5px rgb(5, 92, 92);
 }
 
-.Socials{
-    box-shadow: 3px 2px 5px rgb(5, 92, 92);
+.Socials {
+  box-shadow: 3px 2px 5px rgb(5, 92, 92);
 }
-.navContainer{
-    background-color: transparent !important;
+.navContainer {
+  background-color: transparent !important;
 }
 
-.dropdown-menu{
-    padding:0 !important;
-    
-
+.dropdown-menu {
+  padding: 0 !important;
 }
-.navbarContainer{
-    background-image: url(".././Components/Tiles_background\ -\ navbar.jpg");
-
+.navbarContainer {
+  background-image: url(".././Components/Tiles_background\ -\ navbar.jpg");
 }
-/* .nav-link:hover{
-    
-    padding:0px;
-    margin-bottom: 0px;
-    border-bottom: solid;
-    border-bottom-color: rgb(47, 125, 173);
-    transition: all 0.2s ease-in;
-} */
+/* }
+.nav-link:hover {
+  padding: 0px;
+  margin-bottom: 0px;
+  border-bottom: none !important; */
+/* border-bottom-color: rgb(47, 125, 173); */
+/* transition: all 0.2s ease-in; */
+/* transition: none !important; */
+/* } */
