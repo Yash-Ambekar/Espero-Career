@@ -1,10 +1,33 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import Form from "react-bootstrap/Form";
 import FormCheck from "react-bootstrap/FormCheck";
 import Button from "react-bootstrap/Button";
 import "../CSS/contactUs.css";
 
 const ContactUs = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        form.current,
+        "YOUR_USER_ID"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div className="container">
       <div className="text-white">
@@ -12,7 +35,7 @@ const ContactUs = () => {
         <p>Provide your contact details and our team will call you soon!</p>
       </div>
       <div className="form-container">
-        <Form>
+        <Form ref={form} onsubmit={sendEmail}>
           <Form.Control
             type="text"
             placeholder="Full Name"
