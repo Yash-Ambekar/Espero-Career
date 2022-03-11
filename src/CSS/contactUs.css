@@ -5,7 +5,7 @@ div.container {
   display: flex;
   flex-direction: column;
   text-align: center;
-
+  
   width: 100%;
   max-width: 100%;
   
@@ -34,8 +34,9 @@ button.form-btn {
   width: 35%;
   border-radius: 40px;
   background-image: linear-gradient(to right, #614385, #516395);
-  font-family: "Montserrat", sans-serif;
+  
   padding: 2%;
+  border: none;
 }
 
 .label-container {
@@ -45,7 +46,7 @@ button.form-btn {
 
   padding: 2% 3%;
   margin-top: 2%;
-  font-family: "Montserrat", sans-serif;
+  
 }
 
 input {
