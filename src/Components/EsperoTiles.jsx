@@ -44,32 +44,32 @@ const Blogtiles = () => {
 
   ];
 
-  return  (
-    
-    <div className="flex w-full justify-center">
-      
-    <div className={`md:items-center md:justify-center xl:columns-3 lg:columns-3 md:columns-2 grid-container`}>
-      
-      {docs.map((doc,index) => {
-   
-        return ( 
-          <div className="grid-item" key={index}>
+  return (
+    <div className="flex flex-col w-full my-4 justify-center items-center">
+      <strong className="text-2xl underline">Why MHS? MHS Advantages</strong>
+      <div
+        className={`md:items-center md:justify-center xl:columns-3 lg:columns-3 md:columns-2 grid-container`}
+      >
+        {docs.map((doc, index) => {
+          return (
+            <div className="grid-item" key={index}>
               <div className="blogInfo">
                 <h4 className="text-center blogTitle">{doc.title}</h4>
                 <hr className="lineSpace" />
               </div>
-              <p className={`min-h-[150px] leading-7 overflow-hidden block text-ellipsis break-words blogDescription`}>
+              <p
+                className={`min-h-[150px] leading-7 overflow-hidden block text-ellipsis break-words blogDescription`}
+              >
                 {doc.content}
               </p>
-              <div className="flex w-full justify-center"> 
-              <img className="w-[100px] flex " src={doc.img} alt="Image" />          
-              </div>  
-          </div>
-        );
-      })}
+              <div className="flex w-full justify-center">
+                <img className="w-[100px] flex " src={doc.img} alt="Image" />
+              </div>
+            </div>
+          );
+        })}
+      </div>
     </div>
-    </div>
-    
   );
 };
 
