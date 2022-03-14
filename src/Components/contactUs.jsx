@@ -4,29 +4,11 @@ import Form from "react-bootstrap/Form";
 import FormCheck from "react-bootstrap/FormCheck";
 import Button from "react-bootstrap/Button";
 import "../CSS/contactUs.css";
-import Joi from "joi";
-import { validate } from "react-joi";
 
 const ContactUs = () => {
   const [details, setDetails] = useState({});
   const [error, setError] = useState("");
   const form = useRef();
-
-  const validateForm = (obj) => {
-    const schema = Joi.object({
-      name: Joi.string().required(),
-      email: Joi.string()
-        .email({
-          tlds: { allow: false },
-        })
-        .required(),
-      contact: Joi.contact().required(),
-      school: Joi.string().required(),
-      class: Joi.number().required(),
-    });
-
-    validate(obj, { joiSchema: schema });
-  };
 
   const sendEmail = (e) => {
     e.preventDefault();

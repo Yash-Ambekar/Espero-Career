@@ -58,3 +58,8 @@
 
   margin-top: 10px;
 }
+
+.lineStyle{
+    width: 95%;
+    border: 2px solid skyblue;
+}
