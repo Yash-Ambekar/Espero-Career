@@ -18,13 +18,13 @@ const Slideshow = () => {
         const imageURL = await getDownloadURL(
           ref(storage, itemRef._location.path_)
         );
-        console.log(imageURL);
+        // console.log(imageURL);
         fadeImages.push(imageURL);
       }
       setImagesURL(fadeImages);
     }
 
-    console.log(fadeImages, "Before 30");
+    // console.log(fadeImages, "Before 30");
   };
 
   useEffect(() => {
@@ -34,7 +34,7 @@ const Slideshow = () => {
   return (
     <div className="slide-container">
       {images.length > 0 ? (
-        <Fade indicators={true}>
+        <Fade indicators={true} cssClassName="slider">
           {images.map((fadeImage, index) => (
             <div key={index}>
               <div className="flex justify-center image-container">
