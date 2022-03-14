@@ -28,10 +28,6 @@ const Slideshow = () => {
   };
 
   useEffect(() => {
-    console.log(images, "Hemlo");
-  }, [images]);
-
-  useEffect(() => {
     handleImages();
   }, []);
 

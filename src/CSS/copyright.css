@@ -5,7 +5,7 @@ div.CopyrightContainer {
   font-weight: bold;
   justify-content: center;
 
-  height: 150px;
+  height: 85px;
   display: flex;
   flex-direction: row;
 }
